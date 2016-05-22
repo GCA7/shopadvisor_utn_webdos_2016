@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LearningKOModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="StudentId" />
+    </Key>
+    <Property Name="StudentId" Type="Guid" Nullable="false" />
+    <Property Name="FirtsName" Type="String" MaxLength="15" FixedLength="true" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Age" Type="Int32" />
+    <Property Name="Gender" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Batch" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Adress" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="Class" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="School" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Domicile" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="LearningKOEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Student" EntityType="Self.Student" />
+  </EntityContainer>
+</Schema>
