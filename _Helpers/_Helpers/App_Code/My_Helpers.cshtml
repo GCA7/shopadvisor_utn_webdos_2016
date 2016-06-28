@@ -1,0 +1,54 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace _Helpers.App_Code
+{
+    @helper MakeNote(string content)
+    {
+    <div class="note"
+         style="border: 1px solid black; width: 90%; padding: 5px; margin-left: 15px;">
+        <p>
+            <strong>Note</strong>&nbsp;&nbsp; @content
+        </p>
+    </div>
+        
+    }
+    @helper Color(string content)
+    {
+    <div class="note"
+         style="color: blue;">
+        <p>
+            <strong>Note</strong>&nbsp;&nbsp; @content
+        </p>
+    </div>
+    }
+    @helper Tamaño(string content)
+        {
+    <div class="note"
+         style="color: green;">
+        <p>
+            <h1>Note</h1>&nbsp;&nbsp; @content
+        </p>
+    </div>
+    }
+        @helper Caja(string content)
+                {
+    <div class="note"style="border: 1px solid black; width: 90%; padding: 5px; margin-left: 15px;">
+        <p>
+            <input placeholder="Ingresa texto"/>&nbsp; @content
+        </p>
+    </div>
+        }
+
+    @helper Click(string content)
+                    {
+    <div class="note">
+        <p>
+            <button style="backgroud-color: blue;">Log in with Facebook</button> @content
+        </p>
+    </div>
+            }
+
+}
