@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace Curriculum.App_Code
+{
+	@helper CajadeTexto(string content)
+    {
+    <div class="note"
+         style="border: 1px solid black; width: 90%; padding: 5px; margin-left: 15px;">
+        <div class="container">
+            <div class="col-sm-6">
+                <img style="max-width:55%; padding-left:15%;" src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png" />
+            </div>
+            <div class="col-sm-6">
+                <h1>Estudiante de Ingenieria del Software en la UTN</h1>
+                <h2>Costa Rica</h2>
+                <p>Web2</p>
+            </div>
+        </div>&nbsp;&nbsp; @content
+    </div>
+}   
+    @helper Arriba(string content)
+    {
+    <div class="note"
+         style="padding:2%;">
+    </div>
+        }
+
+    @helper Linea(string content)
+    {
+    <div class="note container"
+         style="border-top: solid black 1px; padding:2%;">
+    </div>
+}
+
+
+        }

@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@Helpers.CajadeTexto("")
+
+@Helpers.Arriba("")
+<div class="container">
+    <div>
+        <div>
+            <strong>Experiencia</strong>
+        </div>
+        <div>
+
+                <h5>@ViewData["Experiencia"]</h5><br />
+
+        </div>
+    </div>
+    <div>
+        @Helpers.Arriba("")
+        @Helpers.Linea("")
+        <div>
+            <strong>Lenguajes</strong>
+        </div>
+        <div>
+            <ul>
+                <li>@ViewData["Lenguajes"]</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
